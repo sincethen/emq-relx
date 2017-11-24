@@ -10,15 +10,16 @@ DEPS += emqttd emq_modules emq_dashboard emq_retainer emq_recon emq_reloader \
         emq_auth_clientid emq_auth_username emq_auth_ldap emq_auth_http \
         emq_auth_mysql emq_auth_pgsql emq_auth_redis emq_auth_mongo \
         emq_sn emq_coap emq_stomp emq_plugin_template emq_web_hook \
-        emq_lua_hook emq_auth_jwt
+        emq_lua_hook emq_auth_jwt emq_clientid_unique
 
 # emq deps
-dep_emqttd        = git https://github.com/emqtt/emqttd v2.3.0
+dep_emqttd        = git https://github.com/sincethen/emqttd v2.3.0
 dep_emq_modules   = git https://github.com/emqtt/emq-modules v2.3.0
 dep_emq_dashboard = git https://github.com/emqtt/emq-dashboard v2.3.0
 dep_emq_retainer  = git https://github.com/emqtt/emq-retainer v2.3.0
 dep_emq_recon     = git https://github.com/emqtt/emq-recon v2.3.0
 dep_emq_reloader  = git https://github.com/emqtt/emq-reloader v2.3.0
+dep_emq_clientid_unique = git https://github.com/sincethen/emq-clientid-unique v2.3.0
 
 # emq auth/acl plugins
 dep_emq_auth_clientid = git https://github.com/emqtt/emq-auth-clientid v2.3.0
@@ -26,6 +27,8 @@ dep_emq_auth_username = git https://github.com/emqtt/emq-auth-username v2.3.0
 dep_emq_auth_ldap     = git https://github.com/emqtt/emq-auth-ldap v2.3.0
 dep_emq_auth_http     = git https://github.com/emqtt/emq-auth-http v2.3.0
 dep_emq_auth_mysql    = git https://github.com/emqtt/emq-auth-mysql v2.3.0
+# connect to mariadb 10.2+
+#dep_emq_auth_mysql    = git https://github.com/sincethen/emq-auth-mysql v2.3.0
 dep_emq_auth_pgsql    = git https://github.com/emqtt/emq-auth-pgsql v2.3.0
 dep_emq_auth_redis    = git https://github.com/emqtt/emq-auth-redis v2.3.0
 dep_emq_auth_mongo    = git https://github.com/emqtt/emq-auth-mongo v2.3.0
